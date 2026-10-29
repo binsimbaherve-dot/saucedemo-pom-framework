@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SauceDemo Suite">
+    <test name="Smoke">
+        <groups><run><include name="smoke"/></run></groups>
+        <classes>
+            <class name="com.herve.saucedemo.tests.LoginTest"/>
+            <class name="com.herve.saucedemo.tests.CheckoutTest"/>
+        </classes>
+    </test>
+    <test name="Regression">
+        <classes>
+            <class name="com.herve.saucedemo.tests.LoginTest"/>
+            <class name="com.herve.saucedemo.tests.CartTest"/>
+            <class name="com.herve.saucedemo.tests.CheckoutTest"/>
+        </classes>
+    </test>
+</suite>
